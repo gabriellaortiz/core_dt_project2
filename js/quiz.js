@@ -113,7 +113,7 @@ var file="<input type='file' />";
             var fileUpload = addFile(name);
             qElement.append(fileUpload);
         }
-                
+
         var shortAnswer = addBox(name);
         qElement.append(shortAnswer);
 
@@ -155,8 +155,8 @@ var file="<input type='file' />";
 
     function addBox(name) {
         var enterAnswer = document.createElement('div');
-        var textHtml = '<input id="useranswer" type="text" name="' + name + '"';    
-        textHtml += '/>';
+        var textHtml = '<textarea id="useranswer" name="' + name + '"';    
+        textHtml += 'textarea/>';
         enterAnswer.innerHTML = textHtml;        
         return enterAnswer;
 }
