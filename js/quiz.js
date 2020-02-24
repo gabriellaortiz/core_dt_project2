@@ -108,19 +108,18 @@ var file="<input type='file' />";
 
         var question = $('<p>').append(questions[index].question);
         qElement.append(question);
-       	
-	    var shortAnswer = addBox(name);
-	    qElement.append(shortAnswer);
 
+        if (questionCounter == 0 || questionCounter == 5) {
+            var fileUpload = addFile(name);
+            qElement.append(fileUpload);
+        }
+                
+        var shortAnswer = addBox(name);
+        qElement.append(shortAnswer);
 
-       	if (questionCounter == 0 || questionCounter == 5) {
-        	var fileUpload = addFile(name);
-        	qElement.append(fileUpload);
-       	}
        
-   	   return qElement;
+       return qElement;
      
-
     }
 
     // ORIGINAL Creates a list of the answer choices as radio inputs
@@ -196,7 +195,7 @@ var file="<input type='file' />";
                     $('#next').show();
                 }
             } else {
-            	window.location.href = "results.html";
+                window.location.href = "results.html";
                 $('#next').hide();
                 $('#prev').hide();
                 $('#start').show();
