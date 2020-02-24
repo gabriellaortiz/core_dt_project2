@@ -34,12 +34,8 @@ h1, h2, p {
   font-size: 10pt;
 }
 
-#next a:visited {
-	color: green;
-}
-
-#next a:hover {
-	text-decoration: underline;
+a {
+  color:black;
 }
 
 #useranswer {
