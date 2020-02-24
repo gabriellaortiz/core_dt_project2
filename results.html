@@ -57,16 +57,40 @@ h1, h2, p {
   display: none;
   text-align: center;
 }
+
+
+#wrapper {
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+body {
+  padding: 20px;
+}
 </style>
+
+
 </head>
-<body onload="myFunction()" style="margin:0;">
 
+<body onload="myFunction()" class="no-transition stretched">
+
+<div id="wrapper" class="clearfix">
+<header id="header" class="full-header">
+</header> 
 <div id="loader"></div>
-
 <div style="display:none;" id="myDiv" class="animate-bottom">
-  <h2>Tada!</h2>
-  <p>Some text in my newly loaded page..</p>
+
+<h1>ARCHITECTURE SKILLS ASSESSMENT</h1>
+<h2>Here are your results</h2>
+  <p>RESULTS..</p>
+
 </div>
+
+
+
+
+
 
 <script>
 var myVar;
