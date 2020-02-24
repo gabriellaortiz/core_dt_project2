@@ -3,7 +3,7 @@ h1, h2, p {
 }
 
 #wrapper {
-	max-width: 300px;
+	max-width: 500px;
 	margin: auto;
 	padding: 10px;
 	text-align: center;
@@ -14,15 +14,23 @@ h1, h2, p {
 
 #next {
 	float: right;
+	font-family: helvetica;
+	text-transform: uppercase;
+	color: green;
+	text-decoration: none !important;
 }
 
-#prev {
-	float: left;
+#next a:visited {
+	color: green;
+}
+
+#next a:hover {
+	text-decoration: underline;
 }
 
 #useranswer {
 	width: 100%;
-	height: 150px;
+	height: 500px;
   	padding: 20px 20px;
   box-sizing: border-box;
   border: 1px solid #black;
