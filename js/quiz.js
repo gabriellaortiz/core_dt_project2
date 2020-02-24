@@ -17,7 +17,7 @@ var file="<input type='file' />";
             question: "You are in the middle of designing a project for a new building in midtown Manhattan. You realize that a team member messed up the measurements, therefore setting back the timeline for completion. How do you approach the situation?",
             choices: [others],
         },{
-            question: "Provide a sketch, a three dimensional drawing, and a prototype for a hospital building. What needs to be included?",
+            question: "Provide a sketch, a three dimensional drawing, and a prototype for a hospital building.",
             choices: [file, file, file],
         },{
             question: "You’re leading a team in which there is a disagreement between two of your colleagues. How do you resolve the issue?",
@@ -112,12 +112,10 @@ var file="<input type='file' />";
         if (questionCounter == 0 || questionCounter == 5) {
             var fileUpload = addFile(name);
             qElement.append(fileUpload);
+        } else {
+            var shortAnswer = addBox(name);
+            qElement.append(shortAnswer); 
         }
-
-        var shortAnswer = addBox(name);
-        qElement.append(shortAnswer);
-
-       
        return qElement;
      
     }
