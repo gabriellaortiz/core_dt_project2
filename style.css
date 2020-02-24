@@ -1,0 +1,22 @@
+#wrapper {
+	max-width: 300px;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+}
+
+#question p{
+	min-height: 300px;
+}
+
+#next {
+	float: right;
+}
+
+#prev {
+	float: left;
+}
+
+#useranswer {
+	padding-bottom: 10px;
+}
